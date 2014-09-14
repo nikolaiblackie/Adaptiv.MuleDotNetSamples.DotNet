@@ -6,6 +6,15 @@ The classes are referenced from https://github.com/nikolaiblackie/Adaptiv.MuleDo
 
 Samples part of Auckland Code Camp 2014 presentation demonstrations  http://www.slideshare.net/nikolaiadaptiv/mule-anypoint-platform-dot-net-alice-in-a-java-integration-wonderland
 
+References used to build samples:
+* Dotnet Connector
+  * http://www.mulesoft.org/documentation/display/current/DotNet+Connector 
+* MSMQ Connector
+ * http://www.mulesoft.org/documentation/display/current/MSMQ+Connector 
+* Mule Blogs
+ * http://blogs.mulesoft.org/solutions-for-microsoft/ 
+ * http://blogs.mulesoft.org/integrating-mule-esb-net-based-rules-engines/ 
+
 * SampleMule - A sample class library demonstrating primitave and message parameter based method calls.
 
 * BizTalk Samples - The following items are utilised in a BizTalk Business Rules engine sample, an installation of BizTalk server is a prerequsite to run these. 
