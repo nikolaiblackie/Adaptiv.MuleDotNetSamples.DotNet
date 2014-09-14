@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<brl xmlns="http://schemas.microsoft.com/businessruleslanguage/2002">
+  <ruleset name="AdaptivIntegration.BizTalkSample.Policy">
+    <version major="1" minor="0" description="" modifiedby="WIN2012BTSMULE\Administrator" date="2014-09-11T20:45:50.1240339+12:00" />
+    <configuration />
+    <bindings>
+      <xmldocument ref="xml_31" doctype="AdaptivIntegration.BizTalkSample.SampleSchema" instances="16" selectivity="1" instance="0">
+        <selector>/*[local-name()='Request' and namespace-uri()='http://AdaptivIntegration.BizTalkSample.SampleSchema']</selector>
+        <schema>C:\Users\Administrator\Documents\Visual Studio 2013\Projects\SampleMule\BizTalkSample\SampleSchema.xsd</schema>
+      </xmldocument>
+    </bindings>
+    <rule name="CalcRule" priority="0" active="true">
+      <if>
+        <and>
+          <compare operator="greater than">
+            <vocabularylink uri="3f0e9bcc-6212-4e6a-853c-e517f157a626" element="b276a0f4-12d9-4380-b242-135bbfc5e287" />
+            <lhs>
+              <function>
+                <vocabularylink uri="cb8a6f32-c47b-4097-b0af-b7fe444f06d5" element="43359d4e-fcf5-44f4-ac50-0fc3f26cefae" />
+                <xmldocumentmember xmldocumentref="xml_31" type="decimal" sideeffects="false">
+                  <field>*[local-name()='A' and namespace-uri()='']</field>
+                  <fieldalias>A</fieldalias>
+                </xmldocumentmember>
+              </function>
+            </lhs>
+            <rhs>
+              <constant>
+                <decimal>0</decimal>
+              </constant>
+            </rhs>
+          </compare>
+          <compare operator="greater than">
+            <vocabularylink uri="3f0e9bcc-6212-4e6a-853c-e517f157a626" element="b276a0f4-12d9-4380-b242-135bbfc5e287" />
+            <lhs>
+              <function>
+                <vocabularylink uri="cb8a6f32-c47b-4097-b0af-b7fe444f06d5" element="7abd6407-7c3f-4a08-96dc-314c8dac9aad" />
+                <xmldocumentmember xmldocumentref="xml_31" type="decimal" sideeffects="false">
+                  <field>*[local-name()='PlusB' and namespace-uri()='']</field>
+                  <fieldalias>PlusB</fieldalias>
+                </xmldocumentmember>
+              </function>
+            </lhs>
+            <rhs>
+              <constant>
+                <decimal>0</decimal>
+              </constant>
+            </rhs>
+          </compare>
+        </and>
+      </if>
+      <then>
+        <function>
+          <vocabularylink uri="cb8a6f32-c47b-4097-b0af-b7fe444f06d5" element="c0ac34ff-cfdd-4032-b906-bfe7b17072fb" />
+          <xmldocumentmember xmldocumentref="xml_31" type="decimal" sideeffects="true">
+            <field>*[local-name()='Equals' and namespace-uri()='']</field>
+            <fieldalias>Equals</fieldalias>
+            <argument>
+              <arithmetic operator="add">
+                <vocabularylink uri="aee857f2-09d5-4615-a96c-87041791ec42" element="e49242c4-4f9c-42a5-b382-6c510652a75e" />
+                <lhs>
+                  <function>
+                    <vocabularylink uri="cb8a6f32-c47b-4097-b0af-b7fe444f06d5" element="43359d4e-fcf5-44f4-ac50-0fc3f26cefae" />
+                    <xmldocumentmember xmldocumentref="xml_31" type="decimal" sideeffects="false">
+                      <field>*[local-name()='A' and namespace-uri()='']</field>
+                      <fieldalias>A</fieldalias>
+                    </xmldocumentmember>
+                  </function>
+                </lhs>
+                <rhs>
+                  <function>
+                    <vocabularylink uri="cb8a6f32-c47b-4097-b0af-b7fe444f06d5" element="7abd6407-7c3f-4a08-96dc-314c8dac9aad" />
+                    <xmldocumentmember xmldocumentref="xml_31" type="decimal" sideeffects="false">
+                      <field>*[local-name()='PlusB' and namespace-uri()='']</field>
+                      <fieldalias>PlusB</fieldalias>
+                    </xmldocumentmember>
+                  </function>
+                </rhs>
+              </arithmetic>
+            </argument>
+          </xmldocumentmember>
+        </function>
+      </then>
+    </rule>
+  </ruleset>
+</brl>

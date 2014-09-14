@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<brl xmlns="http://schemas.microsoft.com/businessruleslanguage/2002">
+  <vocabulary id="cb8a6f32-c47b-4097-b0af-b7fe444f06d5" name="AdaptivIntegration.AdaptivIntegration.BizTalkSample.Vocabulary" uri="" description="">
+    <version major="1" minor="0" description="" modifiedby="WIN2012BTSMULE\Administrator" date="2014-09-11T20:44:32.6116052+12:00" />
+    <vocabularydefinition id="c0ac34ff-cfdd-4032-b906-bfe7b17072fb" name="SetEquals" description="">
+      <bindingdefinition>
+        <documentelementbindingdefinition field="*[local-name()='Equals' and namespace-uri()='']" fieldalias="Equals" type="decimal">
+          <documentinfo schema="C:\Users\Administrator\Documents\Visual Studio 2013\Projects\SampleMule\BizTalkSample\SampleSchema.xsd" documenttype="AdaptivIntegration.BizTalkSample.SampleSchema" selector="/*[local-name()='Request' and namespace-uri()='http://AdaptivIntegration.BizTalkSample.SampleSchema']" selectoralias="/*[local-name()='Request' and namespace-uri()='http://AdaptivIntegration.BizTalkSample.SampleSchema']" instance="0" />
+          <argument position="0">
+            <valuedefinitionliteral type="decimal">
+              <decimal>0</decimal>
+            </valuedefinitionliteral>
+          </argument>
+        </documentelementbindingdefinition>
+      </bindingdefinition>
+      <formatstring language="en-US" string="SetEquals {0}" delimiter="{[0-9]+}">
+        <argument position="0">
+          <valuedefinitionliteral type="decimal">
+            <decimal>0</decimal>
+          </valuedefinitionliteral>
+        </argument>
+      </formatstring>
+    </vocabularydefinition>
+    <vocabularydefinition id="43359d4e-fcf5-44f4-ac50-0fc3f26cefae" name="GetA" description="">
+      <bindingdefinition>
+        <documentelementbindingdefinition field="*[local-name()='A' and namespace-uri()='']" fieldalias="A" type="decimal">
+          <documentinfo schema="C:\Users\Administrator\Documents\Visual Studio 2013\Projects\SampleMule\BizTalkSample\SampleSchema.xsd" documenttype="AdaptivIntegration.BizTalkSample.SampleSchema" selector="/*[local-name()='Request' and namespace-uri()='http://AdaptivIntegration.BizTalkSample.SampleSchema']" selectoralias="/*[local-name()='Request' and namespace-uri()='http://AdaptivIntegration.BizTalkSample.SampleSchema']" instance="0" />
+        </documentelementbindingdefinition>
+      </bindingdefinition>
+      <formatstring language="en-US" string="GetA" />
+    </vocabularydefinition>
+    <vocabularydefinition id="7abd6407-7c3f-4a08-96dc-314c8dac9aad" name="GetB" description="">
+      <bindingdefinition>
+        <documentelementbindingdefinition field="*[local-name()='PlusB' and namespace-uri()='']" fieldalias="PlusB" type="decimal">
+          <documentinfo schema="C:\Users\Administrator\Documents\Visual Studio 2013\Projects\SampleMule\BizTalkSample\SampleSchema.xsd" documenttype="AdaptivIntegration.BizTalkSample.SampleSchema" selector="/*[local-name()='Request' and namespace-uri()='http://AdaptivIntegration.BizTalkSample.SampleSchema']" selectoralias="/*[local-name()='Request' and namespace-uri()='http://AdaptivIntegration.BizTalkSample.SampleSchema']" instance="0" />
+        </documentelementbindingdefinition>
+      </bindingdefinition>
+      <formatstring language="en-US" string="GetB" />
+    </vocabularydefinition>
+  </vocabulary>
+</brl>

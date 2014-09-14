@@ -1,0 +1,5 @@
+<ns0:Request xmlns:ns0="http://BizTalkSample.SampleSchema">
+  <A>10</A>
+  <PlusB>10</PlusB>
+  <Equals>21.177</Equals>
+</ns0:Request>
