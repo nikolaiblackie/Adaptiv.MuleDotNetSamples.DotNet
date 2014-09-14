@@ -4,6 +4,8 @@ The following VS.NET 2013 project contains sample class libraries that demonstra
 
 The classes are referenced from https://github.com/nikolaiblackie/Adaptiv.MuleDotNetSamples.MuleEsb
 
+Samples part of Auckland Code Camp 2014 presentation demonstrations  http://www.slideshare.net/nikolaiadaptiv/mule-anypoint-platform-dot-net-alice-in-a-java-integration-wonderland
+
 * SampleMule - A sample class library demonstrating primitave and message parameter based method calls.
 
 * BizTalk Samples - The following items are utilised in a BizTalk Business Rules engine sample, an installation of BizTalk server is a prerequsite to run these. 
