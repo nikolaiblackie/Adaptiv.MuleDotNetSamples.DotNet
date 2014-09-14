@@ -2,7 +2,7 @@ Adaptiv.MuleDotNetSamples.DotNet
 ================================
 The following VS.NET 2013 project contains sample class libraries that demonstrate MuleESB dotNet connector features.
 
-The classes are referenced from https://github.com/nikolaiblackie/Adaptiv.MuleDotNetSamples.MuleEsb
+The classes are referenced from https://github.com/nikolaiblackie/Adaptiv.MuleDotNetSamples.MuleEsb , API overview published to http://api-portal.anypoint.mulesoft.com/adaptiv-integration/api/adaptiv-integration-complex-dotnet-sample/
 
 Samples part of Auckland Code Camp 2014 presentation demonstrations  http://www.slideshare.net/nikolaiadaptiv/mule-anypoint-platform-dot-net-alice-in-a-java-integration-wonderland
 
@@ -15,6 +15,7 @@ References used to build samples:
  * http://blogs.mulesoft.org/solutions-for-microsoft/ 
  * http://blogs.mulesoft.org/integrating-mule-esb-net-based-rules-engines/ 
 
+Overview of solution items:
 * SampleMule - A sample class library demonstrating primitave and message parameter based method calls.
 
 * BizTalk Samples - The following items are utilised in a BizTalk Business Rules engine sample, an installation of BizTalk server is a prerequsite to run these. 
